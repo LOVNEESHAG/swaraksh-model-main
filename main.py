@@ -25,7 +25,9 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://swaraksh-gamma.vercel.app/"
+        "http://localhost:3000",
+        "http://localhost:5173",
+        "https://swaraksh-gamma.vercel.app/",
     ],
     allow_credentials=True,
     allow_methods=["*"],
